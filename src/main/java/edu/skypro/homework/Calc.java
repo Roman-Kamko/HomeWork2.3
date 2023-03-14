@@ -37,6 +37,9 @@ public class Calc implements CalcFunctions {
 
     @Override
     public String divide(int a, int b) {
+        if (b == 0) {
+            return "Деление на ноль не определено";
+        }
         return a + " / " + b + " = " + (a / b);
     }
 }
