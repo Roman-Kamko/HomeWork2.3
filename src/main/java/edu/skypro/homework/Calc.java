@@ -6,7 +6,18 @@ import org.springframework.stereotype.Service;
 public class Calc implements CalcFunctions {
     @Override
     public String greetings() {
-        return "Добро пожаловать в калькулятор!";
+        return """
+                <h2>Добро пожаловать в калькулятор!</h2>
+                Пример использования: divide?num1=X&num2=X<br>
+                где divide - действие, X - любое целое число.<br>
+                <h4>Доступные команды:</h4>
+                <ul>
+                    <li>plus - сложить;</li>
+                    <li>minus - вычесть;</li>
+                    <li>multiply - умножить;</li>
+                    <li>divide - разделить;</li>
+                </ul>
+               """;
     }
 
     @Override
