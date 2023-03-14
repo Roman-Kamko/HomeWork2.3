@@ -40,6 +40,6 @@ public class Calc implements CalcFunctions {
         if (b == 0) {
             return "Деление на ноль не определено";
         }
-        return a + " / " + b + " = " + (a / b);
+        return a + " / " + b + " = " + (double) a / b;
     }
 }
